@@ -1,2 +1,18 @@
 bin
 gen
+
+#IntelliJ IDEA#
+###############
+*.iml
+*.ipr
+*.iws
+.idea
+target
+classes
+
+#Gradle#
+#########
+.gradle
+build/*
+*/build/*
+gradle/*

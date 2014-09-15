@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.2'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        applicationId 'sh.calaba.demoproject'
+        versionCode 1
+        versionName '1.0'
+        minSdkVersion 9
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+
+        release {
+            debuggable false
+            jniDebugBuild false
+            runProguard false
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        xmlReport false
+        htmlReport false
+    }
+}
